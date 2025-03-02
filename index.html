@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies Database</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Movies Database</h1>
+  </header>
+  <main>
+    <div class="controls">
+      <input type="text" id="filterInput" placeholder="Filter by Title..." />
+    </div>
+    <table id="moviesTable">
+      <thead>
+        <tr>
+          <th data-key="Title">Title</th>
+          <th data-key="Year">Year</th>
+          <th data-key="Directed_by">Director</th>
+          <th data-key="Box_office">Box Office</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Movie rows will be inserted here dynamically -->
+      </tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

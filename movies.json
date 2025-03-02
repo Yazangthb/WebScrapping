@@ -1,0 +1,19 @@
+[
+    {
+      "Rank": "1",
+      "Title": "Avatar",
+      "Year": "2009",
+      "movie_url": "https://en.wikipedia.org/wiki/Avatar_(2009_film)",
+      "Directed_by": "James Cameron",
+      "Box_office": "$2.923 billion"
+    },
+    {
+      "Rank": "2",
+      "Title": "Titanic",
+      "Year": "1997",
+      "movie_url": "https://en.wikipedia.org/wiki/Titanic_(1997_film)",
+      "Directed_by": "James Cameron",
+      "Box_office": "$2.187 billion"
+    }
+  ]
+  
