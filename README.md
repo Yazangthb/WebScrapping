@@ -1,4 +1,4 @@
-# Yazangthb Web Scrapping
+# Web Scrapping
 
 This repository contains a web scraping project that extracts movie data from Wikipedia's "List of highest-grossing films" page using Scrapy. It processes the data by cleaning and saving it in multiple formats, and it provides a simple web interface to display the results.
 
