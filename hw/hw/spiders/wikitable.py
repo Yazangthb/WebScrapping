@@ -43,8 +43,16 @@ class WikiTableSpider(scrapy.Spider):
         infobox = response.css("table.infobox.vevent")
         
         if infobox:
-            directed_by = infobox.css("tr:contains('Directed by') td *::text").get()
-            box_office = infobox.css("tr:contains('Box office') td *::text").get()
+            # directed_by = infobox.css("tr:contains('Directed by') td *::text").get()
+            directed_by = infobox.css("tr:contains('Directed by') td div.plainlist li *::text").get()
+            if not directed_by:
+                directed_by = infobox.css("tr:contains('Directed by') td *::text").get()
+
+
+            # box_office = infobox.css("tr:contains('Box office') td *::text").get()
+            box_office = infobox.css("tr:contains('Box office') td div.plainlist li::text").get()
+            if not box_office:
+                box_office = infobox.css("tr:contains('Box office') td *::text").get()
             item["Directed_by"] = directed_by if directed_by else "N/A"
             item["Box_office"] = box_office if box_office else "N/A"
         
